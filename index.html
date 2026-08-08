@@ -442,12 +442,63 @@
       <p>Open the map tab and all your pinned notes appear exactly where you left them. Tap any pin to jump straight back into the note.</p>
     </div>
     <div class="feature-marker">🐿️</div>
-    <div class="feature-visual">
-      <div class="mock-card">
-        <div class="title">Note Map</div>
-        3 pinned notes
-        <div class="mock-pin">📍 Riverside Apartments</div>
-      </div>
+    <div class="feature-visual" style="padding:0;overflow:hidden;">
+      <svg viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;border-radius:17px;">
+        <!-- Map base -->
+        <rect width="300" height="180" fill="#130920"/>
+        <!-- City blocks -->
+        <rect x="0"   y="0"   width="88"  height="62" fill="#180D2A"/>
+        <rect x="96"  y="0"   width="100" height="62" fill="#1C1132"/>
+        <rect x="204" y="0"   width="96"  height="62" fill="#180D2A"/>
+        <rect x="0"   y="70"  width="88"  height="50" fill="#1C1132"/>
+        <rect x="96"  y="70"  width="100" height="50" fill="#180D2A"/>
+        <rect x="204" y="70"  width="96"  height="50" fill="#1C1132"/>
+        <rect x="0"   y="128" width="88"  height="52" fill="#180D2A"/>
+        <rect x="96"  y="128" width="100" height="52" fill="#1C1132"/>
+        <rect x="204" y="128" width="96"  height="52" fill="#180D2A"/>
+        <!-- Horizontal roads -->
+        <rect x="0" y="62"  width="300" height="8" fill="#201040"/>
+        <rect x="0" y="120" width="300" height="8" fill="#201040"/>
+        <line x1="0" y1="66"  x2="300" y2="66"  stroke="#3A1C65" stroke-width="1" stroke-dasharray="10 7"/>
+        <line x1="0" y1="124" x2="300" y2="124" stroke="#3A1C65" stroke-width="1" stroke-dasharray="10 7"/>
+        <!-- Vertical roads -->
+        <rect x="88"  y="0" width="8" height="180" fill="#201040"/>
+        <rect x="196" y="0" width="8" height="180" fill="#201040"/>
+        <line x1="92"  y1="0" x2="92"  y2="180" stroke="#3A1C65" stroke-width="1" stroke-dasharray="10 7"/>
+        <line x1="200" y1="0" x2="200" y2="180" stroke="#3A1C65" stroke-width="1" stroke-dasharray="10 7"/>
+        <!-- Subtle block labels -->
+        <text x="44"  y="38"  text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#2E1A52" letter-spacing="1">PARK</text>
+        <text x="146" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#2E1A52" letter-spacing="1">PLAZA</text>
+        <text x="248" y="155" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" fill="#2E1A52" letter-spacing="1">MARKET</text>
+        <!-- PIN 1 — purple at top intersection (92,66) -->
+        <circle cx="92" cy="66" r="12" fill="#5C2994" opacity="0.18"/>
+        <circle cx="92" cy="60" r="7"  fill="#5C2994"/>
+        <polygon points="87,65 97,65 92,76" fill="#5C2994"/>
+        <!-- Callout right -->
+        <rect x="108" y="44" width="112" height="24" rx="6" fill="#5C2994"/>
+        <polygon points="108,53 101,60 108,64" fill="#5C2994"/>
+        <text x="164" y="60" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">Grocery run 🛒</text>
+        <!-- PIN 2 — gold at right intersection (200,124) -->
+        <circle cx="200" cy="124" r="12" fill="#E8B552" opacity="0.18"/>
+        <circle cx="200" cy="118" r="7"  fill="#E8B552"/>
+        <polygon points="195,123 205,123 200,134" fill="#E8B552"/>
+        <!-- Callout right -->
+        <rect x="214" y="101" width="82" height="24" rx="6" fill="#E8B552"/>
+        <polygon points="214,109 207,117 214,120" fill="#E8B552"/>
+        <text x="255" y="117" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="10" font-weight="600" fill="#1A0A2E">Lease renewal</text>
+        <!-- PIN 3 — lavender at left intersection (92,124) -->
+        <circle cx="92" cy="124" r="12" fill="#9B78C2" opacity="0.18"/>
+        <circle cx="92" cy="118" r="7"  fill="#9B78C2"/>
+        <polygon points="87,123 97,123 92,134" fill="#9B78C2"/>
+        <!-- Callout left -->
+        <rect x="4" y="97" width="82" height="24" rx="6" fill="#9B78C2"/>
+        <polygon points="86,107 93,114 86,116" fill="#9B78C2"/>
+        <text x="45" y="113" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">Meeting notes</text>
+        <!-- Map header bar -->
+        <rect x="0" y="0" width="300" height="22" fill="rgba(19,9,32,0.85)"/>
+        <text x="10" y="14" font-family="-apple-system,system-ui,sans-serif" font-size="10" font-weight="700" fill="#D4B8F0">Note Map</text>
+        <text x="290" y="14" text-anchor="end" font-family="-apple-system,system-ui,sans-serif" font-size="9.5" fill="#8A7A9E">3 pinned</text>
+      </svg>
     </div>
   </section>
 </div>
