@@ -1,264 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Chuck Note</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #fafafa;
-      padding: 2rem 1rem;
-    }
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 16px;
-      padding: 2.5rem 2.5rem 3rem;
-      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
-    }
-    .wordmark {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #5c2896;
-      letter-spacing: -0.01em;
-      margin-bottom: 0.25rem;
-    }
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #5c2896;
-      margin-bottom: 0.25rem;
-    }
-    .effective {
-      font-size: 0.85rem;
-      color: #888;
-      margin-bottom: 2rem;
-    }
-    .summary-box {
-      background: #f3eaff;
-      border-left: 4px solid #5c2896;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 2rem;
-      font-size: 0.95rem;
-    }
-    .summary-box strong { color: #5c2896; }
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p { margin-bottom: 0.9rem; }
-    ul { margin: 0.5rem 0 0.9rem 1.5rem; }
-    li { margin-bottom: 0.35rem; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      margin: 0.75rem 0 1rem;
-    }
-    th {
-      background: #f3eaff;
-      color: #5c2896;
-      text-align: left;
-      padding: 0.5rem 0.75rem;
-      font-weight: 600;
-    }
-    td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #eee; }
-    tr:last-child td { border-bottom: none; }
-    a { color: #5c2896; }
-    .footer {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #eee;
-      font-size: 0.85rem;
-      color: #888;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ChuckNote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #130A20; --bg-surface: #1C0F30; --bg-card: #251540;
+    --pine-deep: #D4B8F0; --pine-brand: #5C2994; --acorn: #E8B552;
+    --text: #EDE8F5; --text-soft: #8A7A9E; --border: rgba(155,120,194,0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.7; }
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 6vw;
+    background: rgba(19,10,32,0.88); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 20px; color: var(--pine-deep); text-decoration: none; }
+  nav a.back { color: var(--text-soft); font-size: 14px; text-decoration: none; }
+  nav a.back:hover { color: var(--text); }
+  .content { max-width: 720px; margin: 0 auto; padding: 64px 6vw 100px; }
+  h1 { font-family: 'Baloo 2', cursive; font-size: 38px; color: var(--pine-deep); margin-bottom: 8px; }
+  .updated { color: var(--text-soft); font-size: 13.5px; margin-bottom: 48px; }
+  h2 { font-size: 18px; font-weight: 600; color: var(--pine-deep); margin: 36px 0 10px; }
+  p { color: var(--text-soft); margin-bottom: 14px; }
+  a { color: var(--acorn); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { color: var(--text-soft); padding-left: 22px; margin-bottom: 14px; }
+  ul li { margin-bottom: 6px; }
+  footer {
+    background: var(--bg-surface); color: var(--text-soft);
+    padding: 34px 6vw; display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 14px; font-size: 13.5px;
+    border-top: 1px solid var(--border);
+  }
+  footer a { text-decoration: none; color: var(--text-soft); }
+  footer a:hover { color: var(--text); }
+  footer .links { display: flex; gap: 22px; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="wordmark">Chuck Note</div>
-    <h1>Privacy Policy</h1>
-    <p class="effective">Effective date: August 7, 2026 &nbsp;·&nbsp; Version 1.0</p>
 
-    <div class="summary-box">
-      <strong>Short version:</strong> Chuck Note is a local-first notes app.
-      Your notes live on your device. We do not have a server, we do not
-      collect your notes, and we do not share any personal data with third
-      parties. The only data that ever leaves your device is what Apple
-      processes for subscriptions on our behalf.
-    </div>
+<nav>
+  <a class="brand" href="/">ChuckNote</a>
+  <a class="back" href="/">← Back</a>
+</nav>
 
-    <h2>1. Who We Are</h2>
-    <p>
-      Chuck Note ("we", "us", "our") is an iOS application developed and
-      published by Chuck Silver. If you have any questions about this policy,
-      contact us at
-      <a href="mailto:chuckchuckapps@gmail.com">chuckchuckapps@gmail.com</a>.
-    </p>
+<div class="content">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 12, 2026</p>
 
-    <h2>2. Data We Collect — and Data We Don't</h2>
-    <p>
-      Chuck Note is designed to collect as little as possible. The table
-      below describes every category of data the app touches.
-    </p>
+  <p>ChuckNote is built with privacy as a default. Your notes stay on your device. We don't run servers, we don't have accounts, and we don't sell your data.</p>
 
-    <table>
-      <tr>
-        <th>Data</th>
-        <th>How it's used</th>
-        <th>Stored where</th>
-        <th>Shared?</th>
-      </tr>
-      <tr>
-        <td><strong>Your notes &amp; attachments</strong></td>
-        <td>Core app functionality</td>
-        <td>On your device (SwiftData)</td>
-        <td>Never</td>
-      </tr>
-      <tr>
-        <td><strong>App preferences</strong> (dark mode, etc.)</td>
-        <td>Remember your settings</td>
-        <td>On your device (UserDefaults)</td>
-        <td>Never</td>
-      </tr>
-      <tr>
-        <td><strong>Note location</strong> (optional, coarse)</td>
-        <td>Pin notes to a map place</td>
-        <td>On your device</td>
-        <td>Never</td>
-      </tr>
-      <tr>
-        <td><strong>Exported files</strong> (PDF / TXT)</td>
-        <td>Share sheet only</td>
-        <td>Temp folder, auto-deleted by iOS</td>
-        <td>Only if you share them</td>
-      </tr>
-      <tr>
-        <td><strong>Purchase &amp; subscription info</strong></td>
-        <td>Unlock Premium features</td>
-        <td>Apple's servers</td>
-        <td>Apple only (see §5)</td>
-      </tr>
-    </table>
+  <h2>What we collect</h2>
+  <p>ChuckNote itself does not collect, transmit, or store any personal information on external servers. All notes, attachments, and location pins are stored locally on your device using Apple's SwiftData framework.</p>
 
-    <p>
-      We do <strong>not</strong> collect analytics, crash logs, advertising
-      identifiers, device fingerprints, or any data for tracking or profiling.
-      We have no back-end server and receive no telemetry from the app.
-    </p>
+  <h2>Location</h2>
+  <p>If you choose to pin a note to a place, ChuckNote requests your location to attach coordinates to that note. This data stays entirely on your device. We never transmit your location to any server.</p>
 
-    <h2>3. Location Access</h2>
-    <p>
-      Chuck Note requests <em>When In Use</em> location access only when you
-      choose to pin a note to your current location. The location is stored
-      as a latitude/longitude pair and a plain-text place name
-      (e.g., "San Francisco") on your device. It is never transmitted to us.
-      You may revoke location access at any time in
-      <strong>Settings → Privacy &amp; Security → Location Services →
-      Chuck Note</strong>.
-    </p>
+  <h2>Advertising (Google AdMob)</h2>
+  <p>ChuckNote is free and supported by ads served by <strong>Google AdMob</strong>. To serve ads, Google may use device identifiers (including Apple's Advertising Identifier, IDFA) to show you relevant ads.</p>
+  <p>When you first open ChuckNote, you'll be shown Apple's App Tracking Transparency (ATT) prompt. If you allow tracking, Google may use your IDFA to personalize ads. If you decline, you'll still see ads, but they won't be personalized.</p>
+  <p>Google's use of your data is governed by their own privacy policy:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">How Google uses data in apps</a></li>
+  </ul>
+  <p>To opt out of personalized ads on your device, go to <strong>Settings → Privacy & Security → Tracking</strong> and disable tracking for ChuckNote, or go to <strong>Settings → Privacy & Security → Apple Advertising</strong> and turn off Personalized Ads.</p>
 
-    <h2>4. Photos and Files</h2>
-    <p>
-      When you attach a photo or file to a note, it is read directly from your
-      device and stored locally inside the app's SwiftData container. No copy
-      is uploaded anywhere. Exported PDFs and text files are written to iOS's
-      temporary directory and deleted by the operating system; they are only
-      shared if you explicitly use the share sheet.
-    </p>
+  <h2>Onboarding survey</h2>
+  <p>ChuckNote asks a few optional questions during onboarding (use case, experience level, goal). Your answers are stored locally on your device in UserDefaults and are never transmitted anywhere.</p>
 
-    <h2>5. Subscriptions and Payments</h2>
-    <p>
-      Chuck Note Premium is sold through Apple's App Store using StoreKit 2.
-      All payment processing is handled entirely by Apple. We never see your
-      credit card number, Apple ID, or any billing details. The only
-      subscription data the app processes is a cryptographically signed
-      transaction receipt from Apple, used solely to verify that Premium is
-      active on your account.
-    </p>
-    <p>
-      Apple's privacy practices are governed by the
-      <a href="https://www.apple.com/legal/privacy/" target="_blank">
-        Apple Privacy Policy</a>.
-    </p>
+  <h2>Third-party SDKs</h2>
+  <p>ChuckNote uses the following third-party SDK:</p>
+  <ul>
+    <li><strong>Google Mobile Ads SDK (AdMob)</strong> — for displaying banner ads. Google's SDK includes its own privacy manifest disclosing its data practices to Apple.</li>
+  </ul>
 
-    <h2>6. Children's Privacy</h2>
-    <p>
-      Chuck Note is not directed at children under 13 (or 16 in the EU/UK).
-      We do not knowingly collect personal information from children. If you
-      believe a child has used the app in a way that raises a privacy concern,
-      please contact us and we will address it promptly.
-    </p>
+  <h2>iCloud backup</h2>
+  <p>Your notes may be included in your iCloud backup if you have iCloud Backup enabled on your device. This is controlled entirely by your iOS settings and Apple's iCloud service.</p>
 
-    <h2>7. Data Retention and Deletion</h2>
-    <p>
-      All your data lives on your device. To delete everything, delete the
-      Chuck Note app. iOS will remove all associated SwiftData files,
-      UserDefaults entries, and cached temporary files.
-    </p>
-    <p>
-      Because we hold no server-side copy of your data, we cannot recover
-      notes after the app is deleted unless you have an iCloud or device
-      backup.
-    </p>
+  <h2>Children</h2>
+  <p>ChuckNote is not directed at children under 13. We do not knowingly collect information from children.</p>
 
-    <h2>8. iCloud Sync (Future Feature)</h2>
-    <p>
-      A future version of Chuck Note may offer optional iCloud sync for
-      Premium subscribers. If and when that feature ships, this Privacy
-      Policy will be updated to describe exactly what is synced and how it
-      is protected. Until then, no data leaves your device through iCloud.
-    </p>
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes to this policy, we'll update the date at the top of this page.</p>
 
-    <h2>9. Third-Party Services</h2>
-    <p>
-      Chuck Note does not integrate any third-party analytics, advertising,
-      social, or tracking SDKs. The only third-party system the app
-      communicates with is Apple's StoreKit and App Store infrastructure for
-      subscription management.
-    </p>
+  <h2>Contact</h2>
+  <p>Questions? Reach us at <a href="mailto:chuckchuckapps@gmail.com">chuckchuckapps@gmail.com</a></p>
+</div>
 
-    <h2>10. Security</h2>
-    <p>
-      Your notes are stored in the app's SwiftData container, which is
-      protected by iOS's standard file-system encryption (Data Protection).
-      Files are encrypted at rest whenever the device is locked.
-    </p>
-    <p>
-      The "Protected" flag on individual notes adds a deletion confirmation
-      prompt. It does not apply additional encryption or require
-      authentication to view the note's content.
-    </p>
-
-    <h2>11. Changes to This Policy</h2>
-    <p>
-      We may update this policy as the app adds new features (such as iCloud
-      sync or widgets). When we do, we will update the effective date at the
-      top of this page. Continued use of the app after a change constitutes
-      acceptance of the updated policy. For material changes, we will provide
-      an in-app notice.
-    </p>
-
-    <h2>12. Contact</h2>
-    <p>
-      Questions or concerns about this policy?<br />
-      <a href="mailto:chuckchuckapps@gmail.com">chuckchuckapps@gmail.com</a>
-    </p>
-
-    <div class="footer">
-      Chuck Note &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp;
-      Effective August 7, 2026
-    </div>
+<footer>
+  <span>© 2026 ChuckNote</span>
+  <div class="links">
+    <a href="/terms.html">Terms</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="mailto:chuckchuckapps@gmail.com">Support</a>
   </div>
+</footer>
+
 </body>
 </html>
